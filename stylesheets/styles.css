@@ -149,9 +149,6 @@ nav.navbar.shrink .nav-bg {
   background-size: cover;
   background-position: center;
   display: block;
-  /*height: 100vh;*/
-  /*width: 80%;*/
-  /*padding: 0% 10%;*/
   width: 100%;
 
   /*Transition*/
@@ -163,9 +160,8 @@ nav.navbar.shrink .nav-bg {
 .carousel {
   display: block;
   position: relative;
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  /*top: 0;*/
 }
 
 .carousel-item {
@@ -470,7 +466,7 @@ h2 {
     display: block;
     height: 90%;
     width: 100%;
-    top: -500px;
+    top: -90%;
     z-index: 3;
 
     -webkit-transition: .3s;
@@ -521,5 +517,9 @@ h2 {
 
   .navbar.expand #expand-btn {
     color: #FFF;
+  }
+
+  .container {
+
   }
 }
