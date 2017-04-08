@@ -161,29 +161,31 @@ nav.navbar.shrink .nav-bg {
   display: block;
   position: relative;
   height: 100vh;
-  width: 100%;
+  overflow: hidden;
 }
 
 .carousel-item {
   position: fixed;
   top: 0;
-  left: 0;
+  left: -65%;
   display: block;
   height: 100%;
-  width: 100%;
   opacity: 1;
-
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
 
   /*Transition*/
   -webkit-transition: 1.5s;
   transition: 1.5s;
 }
-
 .carousel-item.fade {
   opacity: 0;
+}
+
+.carousel-item img {
+  display: block;
+  height: 100%;
+
+  position: fixed;
+  left: -50%;
 }
 
 /*Elements*/
