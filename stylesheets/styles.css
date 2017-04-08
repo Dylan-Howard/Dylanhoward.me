@@ -9,7 +9,7 @@ body {
 }
 /*Bar*/
 .navbar {
-  background-color: tranparent;
+  background-color: transparent;
   display: block;
   width: 100%;
   margin: 0px;
@@ -18,7 +18,6 @@ body {
   top: 0;
   left: 0;
   z-index: 2;
-  /*opacity: .2;*/
   /*Animation*/
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
@@ -167,9 +166,10 @@ nav.navbar.shrink .nav-bg {
 .carousel-item {
   position: fixed;
   top: 0;
-  left: -65%;
+  left: 0;
   display: block;
-  height: 100%;
+  height: auto;
+  width: 100%;
   opacity: 1;
 
   /*Transition*/
@@ -521,7 +521,8 @@ h2 {
     color: #FFF;
   }
 
-  .container {
-
+  .carousel-item {
+    height: 100%;
+    width: auto;
   }
 }
