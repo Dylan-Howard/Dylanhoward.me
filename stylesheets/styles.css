@@ -62,11 +62,21 @@ nav.navbar.shrink .nav-bg {
 .navbar.shrink .title {
   color: #000;
 }
-.navbar .nav-link {
+
+.navbar .navlink-holder {
+  display: block;
+  height: auto;
+  width: auto;
+  float: right;
+  position: fixed;
+  top: 0;
+}
+
+.navbar .navlink {
   /*Display*/
   cursor: pointer;
   display: inline-block;
-  float: right;
+  float: left;
   margin: 8px 20px;
   padding: 10px 0px;
   position: relative;
@@ -93,7 +103,7 @@ nav.navbar.shrink .nav-bg {
   position: relative;
   overflow: hidden;
 }
-.navbar .nav-link:before {
+.navbar .navlink:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -109,13 +119,13 @@ nav.navbar.shrink .nav-bg {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.navbar .nav-link:hover:before, .navbar .nav-link:focus:before, .navbar .nav-link:active:before {
+.navbar .navlink:hover:before, .navbar .navlink:focus:before, .navbar .navlink:active:before {
   left: 0;
 }
-.navbar.shrink .nav-link {
+.navbar.shrink .navlink {
   color: #000;
 }
-.navbar.shrink .nav-link:before {
+.navbar.shrink .navlink:before {
   background: #000;
 }
 
@@ -456,8 +466,30 @@ h2 {
     color: #FFF;
   }
 
-  .navbar .nav-link {
-    display: none;
+  .navbar .navlink-holder {
+    display: block;
+    height: 90%;
+    width: 100%;
+    top: -300px;
+    z-index: 3;
+
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+
+  .navbar.expand .navlink-holder {
+    top: 180px;
+    height: 90%;
+
+  }
+
+  .navbar .navlink {
+    display: block;
+    text-align: center;
+    width: 100%;
+
+    font-size: 42px;
+    line-height: 42px;
   }
 
   #expand-btn {
