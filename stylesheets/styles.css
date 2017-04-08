@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Porter';
-    src: url('fonts/PorterBold.ttf') format('truetype');
+    src: url('../fonts/PorterBold.ttf') format('truetype');
 }
 
 body {
@@ -52,7 +52,7 @@ nav.navbar.shrink .nav-bg {
   /*Font*/
   color: #FFF;
   /*font-family: 'Open Sans', sans-serif;*/
-  font-family: 'Porter';
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   font-size: 24px;
   font-style: normal;
   font-variant: normal;
@@ -209,6 +209,14 @@ h2 {
   line-height: 42px;
   text-decoration: none;
   text-align: center;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.it {
+  font-style: italic;
 }
 
 .body-item {
@@ -390,6 +398,9 @@ h2 {
   position: relative;
   width: 100%;
   height: 180px;
+
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .navbar-mob.expand {
@@ -403,9 +414,13 @@ h2 {
   height: 180px;
   z-index: 1;
   opacity: 1;
+
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .navbar-mob.expand .nav-bg {
+  background-color: #0099E5;
   height: 100%;
 }
 
@@ -415,31 +430,46 @@ h2 {
 
 .navbar-mob .title {
   color: #000;
-  font-family: "Porter";
+  /*font-family: "Porter";*/
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   font-size: 50px;
   line-height: 50px;
   margin: 75px 40px 55px;
   text-decoration: none;
   position: fixed;
   z-index: 2;
+
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.navbar-mob.expand .title {
+  color: #FFF;
 }
 
 .navbar-mob .nav-link {
   display: none;
 }
 
-
-
 #expand-btn {
-  background-image: url('images/icons/menu.svg');
+  background-image: url('../images/icons/menu.svg');
   background-size: contain;
-  position: relative;
+  position: fixed;
+  top: 60px;
+  right: 50px;
   z-index: 2;
   display: block;
   float: right;
-  margin: 50px 60px;
+  /*margin: 50px 60px;*/
   height: 80px;
   width: 80px;
+
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.navbar-mob.expand #expand-btn {
+  color: #FFF;
 }
 
 /*#expand-btn img {
