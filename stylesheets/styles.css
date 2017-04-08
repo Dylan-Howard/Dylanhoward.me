@@ -63,12 +63,12 @@ nav.navbar.shrink .nav-bg {
 }
 
 .navbar .navlink-holder {
-  display: block;
+  display: inline-block;
   height: auto;
   width: auto;
-  float: right;
   position: fixed;
   top: 0;
+  right: 0;
 }
 
 .navbar .navlink {
@@ -165,7 +165,7 @@ nav.navbar.shrink .nav-bg {
 
 .carousel-item {
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   display: block;
   height: auto;
@@ -465,7 +465,6 @@ h2 {
   }
 
   .navbar .navlink-holder {
-    display: block;
     height: 90%;
     width: 100%;
     top: -90%;
