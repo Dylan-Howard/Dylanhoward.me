@@ -484,12 +484,19 @@ h2 {
   }
 
   .navbar .navlink {
+    border-bottom: solid 1px #FFF;
+    padding: 40px 0px;
+    margin: 0px;
     display: block;
     text-align: center;
     width: 100%;
 
     font-size: 52px;
     line-height: 52px;
+  }
+
+  .navbar .navlink:before, .navbar.shrink .navlink:before {
+    background-color: transparent;
   }
 
   nav.navbar.expand.shrink .nav-link, .navbar.shrink .navlink {

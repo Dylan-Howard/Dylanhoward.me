@@ -43,6 +43,22 @@ $(document).ready(function() {
       $('nav').addClass('expand');
     }
   });
+  $('#photo-link').click(function() {
+    if($('nav').hasClass('expand')) {
+      $('nav').removeClass('expand');
+    }
+  });
+  $('#webdev-link').click(function() {
+    if($('nav').hasClass('expand')) {
+      $('nav').removeClass('expand');
+    }
+  });
+  $('#gd-link').click(function() {
+    if($('nav').hasClass('expand')) {
+      $('nav').removeClass('expand');
+    }
+  });
+
 });
 
 
