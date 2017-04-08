@@ -470,7 +470,7 @@ h2 {
     display: block;
     height: 90%;
     width: 100%;
-    top: -300px;
+    top: -500px;
     z-index: 3;
 
     -webkit-transition: .3s;
@@ -488,8 +488,12 @@ h2 {
     text-align: center;
     width: 100%;
 
-    font-size: 42px;
-    line-height: 42px;
+    font-size: 52px;
+    line-height: 52px;
+  }
+
+  nav.navbar.expand.shrink .nav-link, .navbar.shrink .navlink {
+    color: #FFF;
   }
 
   #expand-btn {
