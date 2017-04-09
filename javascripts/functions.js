@@ -36,7 +36,7 @@ $(function() {
 
 $(document).ready(function() {
   /* Lazy Load */
-
+  $('.img-item').lazyLoadXT();
   /* Mobile Nav-bar */
   $('#expand-btn').click(function() {
     if($('nav').hasClass('expand')) {
