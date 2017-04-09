@@ -2,6 +2,7 @@
     font-family: 'Porter';
     src: url('../fonts/PorterBold.ttf') format('truetype');
 }
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
   margin: 0px;
@@ -401,6 +402,101 @@ h2 {
 .box-link a:hover {
   background-color: #FFF;
   color: #000;
+}
+
+.ft {
+  background-color: #242424;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  /*height: 120px;*/
+  width: 100%;
+  padding: 40px 0px;
+}
+
+.ft-section {
+  display: inline-block;
+  /*height: 100%;*/
+  margin: 0px 30px;
+  padding: 0px 10px;
+
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.ft .title {
+  color: #FFF;
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.ft .sub {
+  display: block;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 12px;
+  margin: 10px 0px;
+}
+
+.ft-section .hd {
+  display: block;
+  clear: both;
+}
+
+.soc-box {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  margin: 8px;
+  opacity: 1;
+
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.soc-box:hover {
+  opacity: .8;
+}
+
+.vimeo {
+  border: solid 8px #1AB7EA;
+}
+
+.insta {
+  border: solid 8px #BEBEBE;
+}
+
+.youtube {
+  border: solid 8px #D34836;
+}
+
+.unsplash {
+  border: solid 8px #3D8754;
+}
+
+.github {
+  border: solid 8px #6E5494;
+}
+
+.soc-box img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.rt-border {
+  border-right: solid 1px #FFF;
 }
 
 /*Mobile*/
