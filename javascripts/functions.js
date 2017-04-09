@@ -35,6 +35,8 @@ $(function() {
 })();
 
 $(document).ready(function() {
+  /* Lazy Load */
+  $('.lazy').lazy();
   /* Mobile Nav-bar */
   $('#expand-btn').click(function() {
     if($('nav').hasClass('expand')) {

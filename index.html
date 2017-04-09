@@ -2,21 +2,21 @@
 <html>
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.4/jquery.lazy.min.js"></script>
     <script src="javascripts/functions.js"></script>
 
     <link href="stylesheets/styles.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta charset="utf-8">
-    <title>Dylan Lucas Howard</title>
+    <title>Dylan Howard Studio</title>
   </head>
   <body>
     <nav class="navbar">
       <div class="nav-bg"></div>
-      <a class="title" href="#main"><span class="bold">Dylan</span>Howard</a>
+      <a class="title" href="#main">Dylan<span class="bold">Howard</span>Studio</a>
       <div class="navlink-holder">
         <a class="navlink" id="photo-link" href="#photography">Photography</a>
         <a class="navlink" id="webdev-link" href="#web-development">Web Development</a>
-        <a class="navlink" id="gd-link" href="#graphic-design">Graphic Design</a>
         <a class="navlink" href="#">Bio</a>
         <a class="navlink" href="#">Contact</a>
       </div>
@@ -43,15 +43,15 @@
       <div class="container-body">
         <a class="body-item" href="PortraitPhotography.html">
           <span class="item-title">Portrait Photography</span>
-          <img class="item-img" src="images/PhotoPortfolio/Portrait/p7.jpg">
+          <img class="item-img lazy" src="images/icons/load.gif" data-src="images/PhotoPortfolio/Portrait/p7.jpg">
         </a>
         <a class="body-item" href="TravelPhotography.html">
           <span class="item-title">Travel Photography</span>
-          <img class="item-img" src="images/PhotoPortfolio/Travel/p0.jpg">
+          <img class="item-img lazy" src="images/icons/load.gif" data-src="images/PhotoPortfolio/Travel/p0.jpg">
         </a>
         <a class="body-item" href="PhotoJournalism.html">
           <span class="item-title">Photo Journalism</span>
-          <img class="item-img" src="images/PhotoPortfolio/PJ/p1.jpg">
+          <img class="item-img lazy" src="images/icons/load.gif" data-src="images/PhotoPortfolio/PJ/p1.jpg">
         </a>
       </div>
     </div>
@@ -72,14 +72,6 @@
           <span class="item-title">Salem Web</span>
           <img class="item-img" src="images/WebAppScreens/SalemWeb1.png">
         </a>
-      </div>
-    </div>
-    <div class="container" id="graphic-design">
-      <div class="container-head">
-        <h1>Graphic Design</h1>
-      </div>
-      <div class="container-body" style="background-image: url(images/bg2.jpg);">
-
       </div>
     </div>
   </body>
