@@ -24,8 +24,26 @@ $(function() {
 });
 
 $(document).ready(function() {
+  /* Image Loading Control */
+
+  /* Main Container BG transition */
+  $('#carousel-item2').ready( function() {
+    (function() {
+        var imgId = 0;
+        var numOfImages = 4; // Change this to the number of background images
+        window.setInterval(function() {
+            $('#carousel-item' + imgId).addClass('fade');
+            imgId = (imgId+1) % numOfImages;
+            $('#carousel-item' + imgId).removeClass('fade');
+        }, 10 * 1000);
+    })();
+  });
+
+
   /* Lazy Load */
   $('.img-item').lazyLoadXT();
+
+  /* Mobile Animations */
   /* Mobile Nav-bar */
   $('#expand-btn').click(function() {
     if($('nav').hasClass('expand')) {
@@ -55,14 +73,4 @@ $(document).ready(function() {
       $('#carousel-item' + i).css('left', '');
     }
   }
-  /* Main Container BG transition */
-  (function() {
-      var imgId = 0;
-      var numOfImages = 4; // Change this to the number of background images
-      window.setInterval(function() {
-          $('#carousel-item' + imgId).addClass('fade');
-          imgId = (imgId+1) % numOfImages;
-          $('#carousel-item' + imgId).removeClass('fade');
-      }, 10 * 1000);
-  })();
 });
