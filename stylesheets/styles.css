@@ -6,7 +6,9 @@
 
 body {
   margin: 0px;
-  width: 100%;
+  width: 100vw;
+
+  overflow-x: hidden;
 }
 /*Bar*/
 .navbar {
@@ -31,7 +33,7 @@ nav.navbar.shrink {
   background-color: #000;
   position: fixed;
   height: 54px;
-  width: 100%;
+  width: 100vw;
   top: 0;
   left: 0;
   opacity: .2;
@@ -460,6 +462,7 @@ h2 {
   width: 24px;
   margin: 8px;
   opacity: 1;
+  cursor: pointer;
 
   -webkit-transition: .3s;
   transition: .3s;
@@ -495,7 +498,7 @@ h2 {
   width: 100%;
 }
 
-.rt-border {
+.ft-border {
   border-right: solid 1px #FFF;
 }
 
@@ -504,7 +507,7 @@ h2 {
   .navbar {
     display: block;
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 180px;
 
     -webkit-transition: .3s;
@@ -514,7 +517,7 @@ h2 {
   .navbar.expand {
     display: block;
     height: 100%;
-    width: 100%;
+    width: 100vw;
   }
 
   .navbar .nav-bg {
@@ -619,5 +622,42 @@ h2 {
   .carousel-item {
     height: 100%;
     width: auto;
+  }
+
+  .ft {
+    display: flex;
+    justify-content: initial;
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    flex-wrap: wrap;
+  }
+
+  .ft-section {
+    display: block;
+    margin: 0px auto;
+    padding: 20px 10%;
+    width: 80%;
+  }
+
+  .ft .title {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .ft .sub {
+    display: block;
+    width: 65%;
+    margin: auto;
+
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .ft-border {
+    border-right-style: none;
+    border-bottom: solid 1px #FFF;
   }
 }
