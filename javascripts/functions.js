@@ -24,6 +24,15 @@ $(function() {
 });
 
 $(document).ready(function() {
+
+  /* On Ready */
+  $('.ready-fade-object').ready( function() {
+    setTimeout(function() {
+      $('.ready-fade').css('top','0px');
+      $('.ready-fade').css('opacity',1);
+    }, 500);
+  });
+
   /* Image Loading Control */
 
   /* Main Container BG transition */
