@@ -25,6 +25,14 @@ $(function() {
 
 $(document).ready(function() {
 
+  $(function(){
+    $('.typed').typed({
+      // strings: ['hello?', 'hola?', 'bonjour?', 'salama?', 'akôry?', 'السلام عليكم?', '你好', 'hey?'],
+      strings: ['a portrait?', 'a family photo?', 'senior pictures?', 'prom photos?', 'a stock photo?', 'a website?', 'anything creative? Just send me a message.'],
+      typeSpeed: 0
+    });
+  });
+
   /* On Ready */
   $('.ready-fade-object').ready( function() {
     setTimeout(function() {
