@@ -14,12 +14,29 @@ body {
 .open-sans {
   color: #000;
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
+  font-size: 28px;
   font-style: normal;
   font-variant: normal;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 30px;
   text-decoration: none;
+}
+
+.fl-l {
+  float: left;
+}
+
+.fl-r {
+  float: right;
+}
+
+.contact-scroll {
+  display: inline-block;
+  border-style: none;
+  border-bottom: solid 2px #000;
+  padding: 0px 0px 40px;
+  margin: 0px 20px;
+  width: auto;
 }
 
 /*Bar*/
@@ -64,7 +81,6 @@ nav.navbar.shrink .nav-bg {
 
   /*Font*/
   color: #FFF;
-  /*font-family: 'Open Sans', sans-serif;*/
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -474,6 +490,40 @@ h2 {
 .box-link a:hover {
   background-color: #FFF;
   color: #000;
+}
+
+.contact {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.contact-col {
+  display: block;
+  height: 500px;
+  width: 400px;
+}
+
+.contact-info {
+  display: block;
+  margin: 40px 20px;
+}
+
+.contact-info .text {
+  display: inline-block;
+  float: left;
+  clear: both;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.contact-info .item {
+  display: inline-block;
+  float: left;
+  clear: both;
+  font-size: 18px;
+  width: 100%;
 }
 
 .ft {
