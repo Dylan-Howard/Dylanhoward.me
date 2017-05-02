@@ -4,6 +4,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="javascripts/jquery.lazyloadxt.min.js"></script>
     <script src="javascripts/typed.js" type="text/javascript"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcM0gtxGQ7aQuoNxZufdWu3B-alQdtack&callback=initMap">
+    </script>
     <script src="javascripts/functions.js"></script>
 
     <link href="stylesheets/jquery.lazyloadxt.fadein.min.css" rel="stylesheet"/>
@@ -25,11 +28,13 @@
       <div id="expand-btn">
       </div>
     </nav>
-    <div class="container" style="height: 100vh">
+    <!-- <div class="container" style="height: 100vh"> -->
+    <div class="container">
       <div class="container-head"></div>
-      <div class="container-body" id="top" style="height: 100vh;">
+      <!-- <div class="container-body" id="top" style="height: 100vh;"> -->
+      <div class="container-body" id="top">
         <div class="space"></div>
-        <div class="contact">
+        <div class="contact" style="height: auto;">
           <div class="contact-col">
             <div class="contact-scroll">
               <span class="open-sans">Need <span class="typed"></span></span>
@@ -49,7 +54,10 @@
             </div>
           </div>
           <div class="contact-col">
-            <div class="soc-box"></div>
+            <span class="item open-sans it">Where are you located?</span>
+            <span class="item open-sans">Glasgow, Kentucky</span>
+            <a class="color item open-sans it" style="text-decoration: underline;" href="https://maps.google.com?saddr=Current+Location&daddr=Glasgow,+KY+42141">Need direction?</a>
+            <div class="item" id="map"></div>
           </div>
         </div>
       </div>
@@ -69,5 +77,18 @@
         <a class="soc-box github" href="https://github.com/Dylan-Howard"><img src="images/icons/github.png"></a>
       </div>
     </div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 36.996135, lng: -85.913516};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
   </body>
 </html>
