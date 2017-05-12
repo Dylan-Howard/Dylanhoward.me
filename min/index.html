@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.lazyloadxt.min.js"></script>
+    <script src="javascripts/functions.js"></script>
+
+    <link href="stylesheets/jquery.lazyloadxt.fadein.min.css" rel="stylesheet"/>
+    <link href="stylesheets/styles.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Dylan Howard Studio</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-bg"></div>
+      <a class="title" href="#main">Dylan<span class="bold">Howard</span>Studio</a>
+      <div class="navlink-holder">
+        <a class="navlink" id="photo-link" href="#portrait">Portraits</a>
+        <a class="navlink" id="photo-link" href="#travel">Travel</a>
+        <a class="navlink" id="photo-link" href="#pj">Photo Journalism</a>
+        <a class="navlink" id="webdev-link" href="#web-development">Web Development</a>
+        <a class="navlink" href="bio.html">Bio</a>
+        <a class="navlink" href="contact.html">Contact</a>
+      </div>
+      <div id="expand-btn"></div>
+    </nav>
+    <div class="container" style="height: 100vh">
+      <div class="container-head"></div>
+      <div class="container-body" id="top" >
+        <div class="carousel">
+          <img class="carousel-item" id="carousel-item0" src="images/PhotoPortfolio/Portrait/p0.jpg" style="left: -45%;">
+          <img class="carousel-item fade" id="carousel-item1" src="images/PhotoPortfolio/Portrait/p1.jpg" style="left: -68%;">
+          <img class="carousel-item fade" id="carousel-item2" src="images/PhotoPortfolio/Portrait/p2.jpg" style="left: -70%;">
+          <img class="carousel-item fade" id="carousel-item3" src="images/PhotoPortfolio/Portrait/p3.jpg" style="left: -70%;">
+        </div>
+      </div>
+      <a class="down-scoll-btn" href="#portrait">›</a>
+    </div>
+    <div class="container" id="portrait">
+      <div class="container-head"></div>
+      <div class="container-body">
+        <a class="body-item" href="PortraitPhotography.html">
+          <span class="item-title">Portrait Photography</span>
+          <img class="item-img" src="images/PhotoPortfolio/Portrait/p7.jpg">
+        </a>
+        <a class="body-item" href="TravelPhotography.html" id="travel">
+          <span class="item-title">Travel Photography</span>
+          <img class="item-img" src="images/PhotoPortfolio/Travel/p0.jpg">
+        </a>
+        <a class="body-item" href="PhotoJournalism.html" id="pj">
+          <span class="item-title">Photo Journalism</span>
+          <img class="item-img" src="images/PhotoPortfolio/PJ/p1.jpg">
+        </a>
+      </div>
+    </div>
+    <div class="container" id="web-development">
+      <div class="container-head"></div>
+      <div class="container-body" style="background-color: red;">
+        <a class="body-item" href="WebDevelopment.html">
+          <span class="item-title">Web Development and Design</span>
+          <img class="item-img" src="images/WebAppScreens/GraphVisualization1.png">
+        </a>
+      </div>
+    </div>
+    <div class="ft">
+      <div class="ft-section ft-border">
+        <span class="title">Dylan<span class="bold">Howard</span>Studio</span>
+        <span class="sub">All Images and Source Code</span>
+        <span class="sub">Copyright (c) 2017 Dylan Howard.</span>
+        <span class="sub">All Rights Reserved.</span>
+      </div>
+      <div class="ft-section" style="width: auto;">
+        <span class="hd">WANT TO SEE MORE?</span>
+        <a class="soc-box vimeo" href="https://www.vimeo.com"><img src="images/icons/vimeo.png"></a>
+        <a class="soc-box insta" href="https://www.instagram.com/chillenwithdylan/?hl=en"><img src="images/icons/insta.png"></a>
+        <a class="soc-box youtube" href="https://www.youtube.com/channel/UCpZedlDhHVN0azQ2_CHNmvg"><img src="images/icons/youtube.png"></a>
+        <a class="soc-box unsplash" href="https://unsplash.com/@dylanlhoward"><img src="images/icons/unsplash.png"></a>
+        <a class="soc-box github" href="https://github.com/Dylan-Howard"><img src="images/icons/github.png"></a>
+      </div>
+    </div>
+  </body>
+</html>
