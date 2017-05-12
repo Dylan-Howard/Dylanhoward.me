@@ -49,7 +49,7 @@ $(document).ready(function() {
 
 
   /* Lazy Load */
-  $('.img-item').lazyLoadXT();
+  // $('.img-item').lazyLoadXT();
 
   /* Mobile Animations */
   /* Mobile Nav-bar */
