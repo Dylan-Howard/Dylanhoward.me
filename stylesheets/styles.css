@@ -43,6 +43,8 @@ body {
   width: auto;
 }
 
+
+
 /*Bar*/
 .navbar {
   background-color: transparent;
@@ -271,6 +273,50 @@ h2 {
   line-height: 42px;
   text-decoration: none;
   text-align: center;
+}
+
+.btn-m {
+  color: #000;
+  display: block;
+  background-color: transparent;
+  border: solid 3px #000;
+  /*border-radius: 80px;*/
+  padding: 10px 20px;
+  margin: 10px 0px;
+
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-variant: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  text-align: center;
+
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.btn-m:hover {
+  color: #FFF;
+  background-color: #000;
+}
+
+.flex-holder {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0px;
+  width: 100%;
+}
+
+.photo-card {
+  display: block;
+  margin: 20px 0px;
+  width: 20%;
+}
+
+.white-bg {
+  background-color: #FFF;
 }
 
 .bold {
