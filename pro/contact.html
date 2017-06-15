@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="javascripts/typed.js" type="text/javascript"></script>
+    <script src="javascripts/typedInit.js" type="text/javascript"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcM0gtxGQ7aQuoNxZufdWu3B-alQdtack&callback=initMap">
+    </script>
+    <script src="javascripts/functions.js"></script>
+
+    <link href="stylesheets/styles.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Howard Studios</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-bg"></div>
+      <a class="logo" href="index.html"></a>
+      <div class="navlink-holder">
+        <a class="navlink" id="photo-link" href="PortraitPhotography.html">Portraits</a>
+        <a class="navlink" id="photo-link" href="TravelPhotography.html">Travel</a>
+        <a class="navlink" id="photo-link" href="PhotoJournalism.html">Photo Journalism</a>
+        <a class="navlink" id="webdev-link" href="WebDevelopment.html">Web Development</a>
+        <a class="navlink" href="bio.html">Bio</a>
+        <a class="navlink" href="#top">Contact</a>
+      </div>
+      <div id="expand-btn">
+      </div>
+    </nav>
+    <div class="container">
+      <div class="container-head"></div>
+      <div class="container-body" id="top">
+        <div class="space-no"></div>
+        <div class="contact" style="height: auto;">
+          <div class="contact-col">
+            <div class="contact-scroll">
+              <span class="open-sans">Need <span class="typed"></span></span>
+              <br>
+              <span class="open-sans">Just send me a message.</span>
+            </div>
+            <div class="contact-info open-sans">
+              <span class="text">
+                You can contact me by phone or email. Just be sure to mention what you need.
+              </span>
+              <div class="item">
+                <span class="fl-l">Phone:</span>
+                <span class="fl-r">(270) 670-4731</span>
+              </div>
+              <div class="item">
+                <span class="fl-l">Email:</span>
+                <span class="fl-r">dylanhoward6@gmail.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-col">
+            <span class="item open-sans it">Where are you located?</span>
+            <span class="item open-sans">Glasgow, Kentucky</span>
+            <a class="color item open-sans it"
+              style="text-decoration: underline;"
+              href="https://maps.google.com?saddr=Current+Location&daddr=Glasgow,+KY+42141">
+              Need directions?
+            </a>
+            <div class="item" id="map"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ft">
+      <div class="ft-section ft-border">
+        <span class="title">Dylan<span class="bold">Howard</span>Studio</span>
+        <span class="sub">All Images Copyright (c) 2017 Dylan Howard.</span>
+        <span class="sub">All Rights Reserved.</span>
+      </div>
+      <div class="ft-section" style="width: auto;">
+        <span class="hd">WANT TO SEE MORE?</span>
+        <a class="soc-box vimeo" href="https://www.vimeo.com"><img src="images/icons/vimeo.png"></a>
+        <a class="soc-box insta" href="https://www.instagram.com/chillenwithdylan/?hl=en"><img src="images/icons/insta.png"></a>
+        <a class="soc-box youtube" href="https://www.youtube.com/channel/UCpZedlDhHVN0azQ2_CHNmvg"><img src="images/icons/youtube.png"></a>
+        <a class="soc-box unsplash" href="https://unsplash.com/@dylanlhoward"><img src="images/icons/unsplash.png"></a>
+        <a class="soc-box github" href="https://github.com/Dylan-Howard"><img src="images/icons/github.png"></a>
+      </div>
+    </div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 36.996135, lng: -85.913516};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+  </body>
+</html>
